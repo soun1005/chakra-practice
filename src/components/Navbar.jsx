@@ -1,12 +1,13 @@
 import {
     Flex,
-    Box,
+    Avatar,
     Heading,
     Button,
     Text,
     Spacer,
     HStack,
     useToast,
+    AvatarBadge,
 } from "@chakra-ui/react";
 import { UnlockIcon } from "@chakra-ui/icons";
 
@@ -30,9 +31,13 @@ const Navbar = () => {
             <Heading as="h1">Soeun & Chakra</Heading>
             <Spacer />
             <HStack spacing="20px">
-                <Box bg="gray.200" p="10px">
-                    M
-                </Box>
+                <Avatar name="Soeun" bg="pink.200" src="/img/peach.png">
+                    <AvatarBadge width="1.3em" bg="teal.500">
+                        <Text fontSize="xs" color="white">
+                            3
+                        </Text>
+                    </AvatarBadge>
+                </Avatar>
                 <Text>thdms1005@gmail.com</Text>
                 <Button colorScheme="pink" onClick={showToast}>
                     Logout
